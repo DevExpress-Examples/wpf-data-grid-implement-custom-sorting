@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" Title="Window1" Height="300" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <CheckBox Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Custom Sort" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked" />
+        <dxg:GridControl Name="grid" Grid.Row="1" CustomColumnSort="grid_CustomColumnSort">
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" NavigationStyle="None" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
