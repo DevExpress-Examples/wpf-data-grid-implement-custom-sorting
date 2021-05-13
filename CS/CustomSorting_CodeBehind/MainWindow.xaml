@@ -1,0 +1,16 @@
+﻿<Window x:Class="CustomSorting_CodeBehind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+        xmlns:local="clr-namespace:CustomSorting_CodeBehind"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <dxg:GridControl x:Name="grid"
+                         CustomColumnSort="OnCustomColumnSort">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Day" GroupIndex="0" SortMode="Custom" />
+                <dxg:GridColumn FieldName="Employee" />
+            </dxg:GridControl.Columns>
+        </dxg:GridControl>
+    </Grid>
+</Window>
