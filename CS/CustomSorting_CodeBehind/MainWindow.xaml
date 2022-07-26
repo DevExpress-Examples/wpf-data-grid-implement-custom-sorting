@@ -8,8 +8,8 @@
         <dxg:GridControl x:Name="grid"
                          CustomColumnSort="OnCustomColumnSort">
             <dxg:GridControl.Columns>
-                <dxg:GridColumn FieldName="Day" GroupIndex="0" SortMode="Custom" />
-                <dxg:GridColumn FieldName="Employee" />
+                <dxg:GridColumn FieldName="Day" GroupIndex="0" SortMode="Custom"/>
+                <dxg:GridColumn FieldName="Employee"/>
             </dxg:GridControl.Columns>
         </dxg:GridControl>
     </Grid>
